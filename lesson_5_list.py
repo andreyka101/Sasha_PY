@@ -20,7 +20,7 @@ for i in arr:
 arr_2 = [2 , 4.5 , True , None , "str" , [4,5,7]]
 print(arr_2)
 
-
+# ukkuku
 # список в списке
 arr_3 = [
     [3,4,8,5,9],
