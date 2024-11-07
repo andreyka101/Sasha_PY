@@ -47,12 +47,12 @@
 
 
 # return закрывает функцию
-# def fun_5():
-#     print("hello")
-#     return 0
-#     print("world")
+def fun_5():
+    print("hello")
+    return 0
+    print("world")
 
-# print(fun_5())
+print(fun_5())
 
 
 
@@ -104,17 +104,17 @@
 
 
 # пример
-num_6 = 1
-def fun_10():
-    global num_6
-    num_6 = num_6 + 1
+# num_6 = 1
+# def fun_10():
+#     global num_6
+#     num_6 = num_6 + 1
 
-print(num_6)
-fun_10()
-fun_10()
-fun_10()
-fun_10()
-print(num_6)
+# print(num_6)
+# fun_10()
+# fun_10()
+# fun_10()
+# fun_10()
+# print(num_6)
 
 
 
