@@ -1,8 +1,8 @@
-# def fun_1(x):
-#     return x * 2
+def fun_1(x):
+    return x * 2
 
-# print(fun_1(3))
-# print(fun_1)
+print(fun_1(3))
+print(fun_1)
 
 
 
@@ -99,10 +99,11 @@
 # lambda x, y - x элемент первого списка , y элемент второго списка
 # def fun_2(x , w):
 #     return x + w
-# arr3 = [1,2,3,4,5]
-# arr4 = [9,6,4,9,7]
+# arr3 = [1,2,3,4,5,3]
+# arr4 = [9,6,4,9,7,3]
 # arr_n = list(map(fun_2 , arr3 , arr4))
 # print(arr_n)
+# "x" if(x < y) else "y"
 
 
 
@@ -114,7 +115,7 @@
 
 
 # filter - он фильтрует
-# arr_6 = [1,2,3,4,5 , 6]
+# arr_6 = [1,2,3,4,5,6]
 # arr_6 = list(filter(lambda x: x < 4  , arr_6))
 # print(arr_6)
 
@@ -144,6 +145,19 @@
 # номер 4
 # дан список в котором списки с числами ,каждое число списка умножить на num
 # переменная num прибавляется на 1 с каждым новым списком (num изначально равен 2)
+
+
+# num = 122
+# print(type(num))
+# if(type(num) == str):
+#     print("ok")
+
+
+
+# num = 1
+# print("yes 1" if(num == 1) else ( "yes 2" if(num == 2) else ("yes 1" if(num < 1) else "not")))
+
+
 
 
 
