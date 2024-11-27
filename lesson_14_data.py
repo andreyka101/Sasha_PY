@@ -90,5 +90,35 @@
 # . если ввести del - удаляется пользователь его имя и пароль
 # все пользователи должны сохраняются на txt файл
 
-# ж
 
+
+
+
+
+# with open("C:/main_brain/del_file_global_2.txt" , "r") as file:
+#     print(file.read())
+
+
+
+# with open("./papka_filse/file2_les.txt" , "r") as file:
+#     print(file.read())
+
+
+
+# with open("../del_file_global.txt" , "r") as file:
+#     print(file.read())
+
+
+
+# with open("../../del_file_global_2.txt" , "r") as file:
+#     print(file.read())
+
+
+
+# with open("../../del_file_global_2.txt" , "r") as file:
+#     print(file.read())
+
+
+
+# with open("../../фаилы/../фаилы/../фаилы/../фаилы/del_s.txt" , "r") as file:
+#     print(file.read())
