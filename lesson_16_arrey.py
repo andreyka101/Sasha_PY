@@ -1,11 +1,21 @@
+
+# нужная ссылка
+# https://pythonworld.ru/moduli/modul-array-massivy-v-python.html
+
+
 from array import array
 
+# создаём массив
+# array(r , s)
+# r - режим массива (размер каждой ячейки в массиве , таблица в ссылке)
+# s - список (можно не писать)
 arr = array("b" , [2 , 4])
 print(arr)
 print(arr[0])
 
 
 
+# у массива есть методы списков:
 # array.append(х) - добавление элемента в конец массива.
 # array.count(х) - возвращает количество вхождений х в массив.
 # array.extend(arr_list) - добавление элементов из списка в массив.
