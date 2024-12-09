@@ -28,39 +28,49 @@ arr = array("b" , [2 , 4 ,7 , 1 , 3 , 5 , 8])
 
 
 
+# возвращает режим массива (символ при создании массива)
 # print(arr.typecode)
 
 
 
+# размер в байтах каждого элемента в массиве
 # print(arr.itemsize)
 
 
 
+# кортеж (ячейка памяти, длина масива). Полезно для низкоуровневых операций.
 # print(arr.buffer_info())
 
 
 
+# .byteswap() - изменяет порядок байтов
 # print(arr)
 # arr.byteswap()
 # print(arr)
 
 
 
+# .tobytes() - преобразовывает к байтам
 # print(arr.tobytes())
 
 
 
+# frombytes(x) - делает массив из байт
+# bytes(b, r) - превращает строку (b) в байты для работы нужно указать кодировку (r)
+# или можно писать b""
 # arr.frombytes(b'\x20\x49\x87\x11')
 # arr.frombytes(bytes("\x20\x49\x87\x11" , encoding = "UTF-8"))
 # print(arr)
 
 
 
+# .tofile(f) - сохраняет массив в открытый файл (f) , файл сохраняется в байтах
 # with open("arr_text.txt" , "bw") as file:
 #     arr.tofile(file)
 
 
 
+# .fromfile(f , n) - записывает (n) чисел из (f) файла в массив , числа в файле должны быть в байтах
 # with open("arr_text.txt" , "br") as file:
 #     arr_2 = array("b")
 #     arr_2.fromfile(file , 4)
@@ -68,16 +78,13 @@ arr = array("b" , [2 , 4 ,7 , 1 , 3 , 5 , 8])
 
 
 
+# .fromlist() - добавление элементов из списка
 # arr.fromlist([2,5,80])
 # print(arr)
 
 
 
-# arr.fromlist([2,5,80])
-# print(arr)
-
-
-
+# .tolist() - преобразование массива в список
 # arr_list = arr.tolist()
 # print(type(arr_list))
 
@@ -88,8 +95,16 @@ arr = array("b" , [2 , 4 ,7 , 1 , 3 , 5 , 8])
 
 
 
+
+
+# дз сделать функцию сортировки массива
+
+# меняем элементы
 el = arr[0]
 arr[0] = arr[1]
 arr[1] == el
 
 
+
+# используй цикл
+# for i in range(len(arr))
