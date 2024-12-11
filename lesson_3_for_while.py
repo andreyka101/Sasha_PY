@@ -38,6 +38,10 @@
 #     print("hi")
 
 
+# range(x, y, z)
+# x - start
+# y - stop
+# z - step
 # for i in range(1 , 20+1 , 3):
 #     print(i)
 #     print("hi")
