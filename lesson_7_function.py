@@ -66,11 +66,11 @@ print(fun_5())
 
 
 # функция принимает несколько значений
-# def fun_7(x:str , y):
-#     print(x , y)
-#     return 10
+def fun_7(x:str , y):
+    print(x , y)
+    return 10
 
-# print(fun_7(5 , 6))
+print(fun_7(y=6 , x=4))
 
 
 

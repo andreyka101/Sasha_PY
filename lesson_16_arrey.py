@@ -9,7 +9,7 @@ from array import array
 # array(r , s)
 # r - режим массива (размер каждой ячейки в массиве , таблица в ссылке)
 # s - список (можно не писать)
-arr = array("b" , [2 , 4 ,7 , 1 , 3 , 5 , 8])
+arr = array("b" , [ 2 , 4 ,7 , 1 , 3 , 5 , 8])
 # print(arr)
 # print(arr[0])
 
@@ -93,18 +93,20 @@ arr = array("b" , [2 , 4 ,7 , 1 , 3 , 5 , 8])
 
 
 
-efefefef
 
 
 
-# дз сделать функцию сортировки массива
 
-# меняем элементы
-el = arr[0]
-arr[0] = arr[1]
-arr[1] == el
+def sort_arr(arr_loc):
+    for i in arr_loc:
+        for index in range(len(arr_loc) - 1):
+            # print(arr_loc[index])
+            if(arr_loc[index] > arr_loc[index + 1]):
+                element = arr_loc[index]
+                arr_loc[index] = arr_loc[index + 1]
+                arr_loc[index + 1] = element
+    
+    return arr_loc
 
+print(sort_arr(arr))
 
-
-# используй цикл
-# for i in range(len(arr))
