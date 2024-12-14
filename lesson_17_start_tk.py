@@ -17,7 +17,7 @@ window.geometry("600x500")
 # bg= цвет фона 
 # fg= цвет текстам
 # font = шрифт и размер текста 
-lab_text_1 = Label(text="rggjg" , font=("Arial Black" , 15) , fg="#83568d" , bg="#eaae2c")
+lab_text_1 = Label(text="текст" , font=("Arial Black" , 15) , fg="#83568d" , bg="#eaae2c")
 lab_text_1.place(x=30 , y=40)
 
 
@@ -32,8 +32,15 @@ def fun():
     # but_1.configure()
 
 # создаём кнопку command вызывает функцию
-but_1 = Button(text="run" , command=fun)
-but_1.place(x=30 , y=50)
+but_1 = Button(text="run" , command=fun ,  font=("Arial Black" , 15))
+but_1.place(x=30 , y=80)
+
+
+
+
+lab_text_1 = Label(text="454554\n5ffgjj    " , font=("Arial Black" , 15) , fg="#83568d" , bg="#2ceada")
+lab_text_1.place(x=300 , y=50 , height=100 , width=100)
+
 
 
 
