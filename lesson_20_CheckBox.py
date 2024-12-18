@@ -14,10 +14,15 @@ def fun():
         window.config(bg="#ffffff")
     else:
         window.config(bg="#000000")
+
+        # закрытия окна
         # window.destroy()
 
 
+# в num_check хранится положения Checkbutton
 num_check = IntVar()
+
+# Checkbutton это кнопка с двумя положениями
 check_box = Checkbutton(text="text" , variable=num_check, command=fun)
 check_box.place(x=30 , y=30)
 

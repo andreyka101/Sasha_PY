@@ -9,12 +9,14 @@ window.config(bg="#ffec3f")
 
 
 
+# ввод данных
 ent_inp = Entry(font=("Arial Black" , 10) ,bg="#8f8100" ,fg="#faf2a8" , width=20 )
 ent_inp.place(x=30 , y=30)
 
 
 
 def fun():
+    # ent_inp.get() - возвращает текст Entry
     print(ent_inp.get())
     # print(int(ent_inp.get()) + 5)
     lab_text.config(text = ent_inp.get())
@@ -28,6 +30,7 @@ lab_text.place(x=230 , y=30)
 
 
 def fun_2():
+    # ent_inp.delete(i , x) - удаляет x символов начиная с i индекса
     # ent_inp.delete(0,1)
     # ent_inp.delete(0,END)
     ent_inp.delete(0,len(ent_inp.get()))
