@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import ttk
 
 
 window = Tk()
@@ -27,7 +28,9 @@ lab_text.place(x=230 , y=30)
 
 
 def fun_2():
-    ent_inp.delete(0,1)
+    # ent_inp.delete(0,1)
+    # ent_inp.delete(0,END)
+    ent_inp.delete(0,len(ent_inp.get()))
 but_2 = Button(text="clear text" , command=fun_2 ,  font=("Arial Black" , 15))
 but_2.place(x=30 , y=150)
 
