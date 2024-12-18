@@ -69,7 +69,7 @@
 #     print(str_num_x_y)
     
 
-
+gbb
 
 # дз
 
