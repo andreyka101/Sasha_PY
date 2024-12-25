@@ -25,6 +25,9 @@ num_check = IntVar()
 # Checkbutton это кнопка с двумя положениями
 check_box = Checkbutton(text="text" , variable=num_check, command=fun)
 check_box.place(x=30 , y=30)
+num_check_2 = IntVar()
+check_box_2 = Checkbutton(text="text2" , variable=num_check_2, command=fun)
+check_box_2.place(x=30 , y=60)
 
 
 

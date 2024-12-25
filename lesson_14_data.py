@@ -1,6 +1,6 @@
 
 # открытие файла
-# file_1 = open("file_las_1.txt")
+# file_1 = open("/file_las_1.txt")
 # print(file_1)
 
 
