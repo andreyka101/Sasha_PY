@@ -10,6 +10,7 @@ window.config(bg="#ffec3f")
 
 
 def fun_1():
+    # считываем переменную
     lab_text.config(text=num_radio.get())
     if(num_radio.get() == "b1"):
         window.config(bg="#f9ef98")
@@ -21,9 +22,10 @@ def fun_1():
 
 
 
-
+# num_radio общая переменная для связи трех Radiobutton
 num_radio = StringVar()
 
+# variable - привязка Radiobutton к переменной
 radio_b1 = ttk.Radiobutton(text="button1" , variable=num_radio , value= "b1" , command=fun_1)
 radio_b1.place(x=30 , y= 30)
 
@@ -36,6 +38,7 @@ radio_b3.place(x=30 , y= 90)
 
 
 
+# меняем Radiobutton
 def fun_check():
     if(num_check.get()):
         # radio_b2.config(variable=num_check, value="none")
