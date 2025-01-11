@@ -14,7 +14,6 @@ lab_text = Label()
 lab_text.place(x=30 , y=150)
 
 
-
 def fun_s(event):
     lab_text.config(text=event)
 
