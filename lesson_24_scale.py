@@ -14,6 +14,7 @@ lab_text = Label()
 lab_text.place(x=30 , y=150)
 
 
+# event - значение Scale
 def fun_s(event):
     lab_text.config(text=event)
 
@@ -24,6 +25,14 @@ def fun_s(event):
     # lab_text.place(x=event)
     # scale_n1.place(y=event)
 
+
+
+
+# ползунок
+# length = длина ползунока
+# from_ = старт
+# to = конец
+# value = значение по умолчанию
 
 scale_n1 = Scale(orient=HORIZONTAL , bg="#79ffac" , command=fun_s , length=200 , from_=0 , to=10 )
 scale_n1.place(x=70 , y=40)
@@ -37,6 +46,7 @@ scale_n2.place(x=300 , y=40)
 
 
 def fun_b():
+    # через метод get() тоже можно получить значение Scale
     but.config(text= scale_n1.get())
 but = Button(text="click", command=fun_b)
 but.place(x=10,y=10)
