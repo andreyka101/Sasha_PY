@@ -20,7 +20,7 @@ def fun_s(event):
 
     # print(type(event))
 
-    # print(int(float(event)) + 20)
+    print(int(float(event)) + 20)
 
     # lab_text.place(x=event)
     # scale_n1.place(y=event)
