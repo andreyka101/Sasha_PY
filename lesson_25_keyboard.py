@@ -15,8 +15,13 @@ lab_text.place(x=10 , y=150)
 
 
 def fun_press(event):
+    # event - получаем информацию о обработчике (клавиша)
     # lab_text.config(text=event)
+
+    # event.keysym - название клавиши
     # lab_text.config(text=event.keysym)
+
+    # event.state - информация о дополнительно зажатых клавиш
     lab_text.config(text=event.state)
     if(event.keysym =="w"):
         window.config(bg="#08cd7b")
@@ -27,6 +32,7 @@ def fun_press(event):
     if(event.keysym =="n"):
         window.config(bg="#cd9208")
 
+# обработчик нажатия клавиши клавиатуры 
 window.bind("<KeyPress>" , fun_press)
 
 
@@ -37,6 +43,7 @@ def fun_release(event):
     if(event.keysym =="w" and event.state == 12):
         window.config(bg="#600b0b")
 
+# обработчик отжатия клавиши клавиатуры
 window.bind("<KeyRelease>" , fun_release)
 
 window.mainloop()
