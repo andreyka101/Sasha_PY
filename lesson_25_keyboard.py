@@ -38,6 +38,7 @@ window.bind("<KeyPress>" , fun_press)
 
 def fun_release(event):
     lab_text.config(text=event)
+    
     if(event.keysym =="w"):
         window.config(bg="#0d5839")
     if(event.keysym =="w" and event.state == 12):

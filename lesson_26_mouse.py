@@ -51,10 +51,16 @@ def fun_3(event):
 window.bind("<Button-3>" , fun_3)
 
 
-
+num=300
 # обработчик вращения колёсика
 def fun_3(event):
+    global num
     lab_text.config(text=event)
+    if(event.delta == 120):
+        num+=5.6
+    if(event.delta == -120):
+        num-=5.6
+    lab_text.place(y=num , x=num)
 window.bind("<MouseWheel>" , fun_3)
 
 
