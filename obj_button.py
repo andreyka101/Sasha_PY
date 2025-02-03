@@ -28,7 +28,9 @@ num = 0
 def fun(event):
     print(event.widget)
     global num
+    # получаем элемент 
     element = event.widget
+    # получаем текст элемента
     print(element["text"])
     print(element["text"].split(" "))
     arr_text = element["text"].split(" ")
